@@ -1,7 +1,6 @@
 ---
+import BtnFooter from "../components/BtnFooter.astro";
 import Header from "../components/Header.astro";
-import HomePage from "../components/HomePage.astro";
-import Model3 from "../components/Model3.astro";
 import Section from "../components/Section.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -34,7 +33,128 @@ import Layout from "../layouts/Layout.astro";
 			</Section>
 		</div>
 		<div class="snap-center">
-			<Model3 />
+			<Section
+				title="Model 3"
+				subtitle="Lease from $399/mo"
+				color="black"
+				subunderline="underline"
+			>
+				<div slot="footer" class="flex gap-x-6">
+					<BtnFooter btn1="Order Now" btn2="Demo Drive" />
+				</div>
+
+				<img
+					slot="background"
+					src="/public/model-3.avif"
+					alt="Imagen Tesla modelo 3"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
+		</div>
+		<div class="snap-center">
+			<Section
+				title="Model Y"
+				subtitle="View Inventory"
+				color="black"
+				subunderline="underline"
+			>
+				<div slot="footer" class="flex gap-x-6">
+					<BtnFooter btn1="Order Now" btn2="Demo Drive" />
+				</div>
+				<img
+					slot="background"
+					src="/public/model-y.avif"
+					alt="Imagen Tesla modelo Y"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
+		</div>
+		<div class="snap-center">
+			<Section
+				title="Model S"
+				subtitle="View Inventory"
+				color="black"
+				subunderline="underline"
+			>
+				<div slot="footer" class="flex gap-x-6">
+					<BtnFooter btn1="Order Now" btn2="Demo Drive" />
+				</div>
+				<img
+					slot="background"
+					src="/public/model-s.avif"
+					alt="Imagen Tesla modelo S"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
+		</div>
+		<div class="snap-center">
+			<Section
+				title="Model X"
+				subtitle="View Inventory"
+				color="black"
+				subunderline="underline"
+			>
+				<div slot="footer" class="flex gap-x-6">
+					<BtnFooter btn1="Order Now" btn2="Demo Drive" />
+				</div>
+				<img
+					slot="background"
+					src="/public/model-x.avif"
+					alt="Imagen Tesla modelo Y"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
+		</div>
+		<div class="snap-center">
+			<Section
+				title="Solar Panels"
+				subtitle="Lowest Cost Solar Panels in America"
+				color="black"
+			>
+				<div slot="footer" class="flex gap-x-6">
+					<BtnFooter btn1="Order Now" btn2="Learn More" />
+				</div>
+				<img
+					slot="background"
+					src="/public/solar-panels.avif"
+					alt="Imagen casa Tesla con Solar Panels"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
+		</div>
+		<div class="snap-center">
+			<Section
+				title="Solar Roof"
+				subtitle="Produce Clean Energy From Your Roof"
+				color="black"
+			>
+				<div slot="footer" class="flex gap-x-6">
+					<BtnFooter btn1="Order Now" btn2="Learn More" />
+				</div>
+				<img
+					slot="background"
+					src="/public/solar-roof.avif"
+					alt="Imagen Casa Tesla con Solar Roof"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
+		</div>
+		<div class="snap-center">
+			<Section title="Accessories" color="black">
+				<div slot="footer">
+					<a
+						href="#"
+						class="text-center rounded text-sm font-medium bg-zinc-800 text-white inline-block py-[10px] px-[89px] hover:bg-zinc-900"
+						>Shop Now</a
+					>
+				</div>
+				<img
+					slot="background"
+					src="/public/accessories.avif"
+					alt="Imagen Accesorios de Tesla"
+					class="w-full h-full object-cover object-center"
+				/>
+			</Section>
 		</div>
 	</main>
 </Layout>
